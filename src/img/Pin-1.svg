@@ -1,0 +1,22 @@
+<svg width="88.000000" height="88.000000" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_1610_dd" x="0.000000" y="0.000000" width="88.000000" height="88.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="0"/>
+			<feGaussianBlur stdDeviation="6.66667"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.14902 0 0 0 0 0.14902 0 0 0 0 0.14902 0 0 0 0.2 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_1_1610_dd)">
+		<rect id="Pin" width="48.000000" height="48.000000" transform="translate(20.000000 20.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<path id="Vector" d="M44 20C38.9609 20 34.1282 22.0228 30.565 25.6235C27.0018 29.2242 25 34.1078 25 39.2C25 52.1599 41.7437 66.7998 42.4563 67.4238C42.8864 67.7957 43.4339 68 44 68C44.5661 68 45.1136 67.7957 45.5437 67.4238C46.375 66.7998 63 52.1599 63 39.2C63 34.1078 60.9982 29.2242 57.435 25.6235C53.8718 22.0228 49.0391 20 44 20Z" fill="#800D63" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Fill 1578" d="M34 39C34 33.486 38.485 29 44 29C49.514 29 54 33.486 54 39C54 44.514 49.514 49 44 49C38.485 49 34 44.514 34 39ZM43.716 31.015C39.437 31.165 36 34.686 36 39C36 41.174 36.874 43.146 38.286 44.59L43.716 31.015ZM49.713 44.59L44.283 31.015C48.562 31.165 52 34.686 52 39C52 41.174 51.125 43.146 49.713 44.59ZM46.0953 40.929L44.0003 39.882L41.9043 40.929L44.0003 35.692L46.0953 40.929ZM38.5508 44.84L44.0008 42.119L49.4498 44.84C48.0198 46.177 46.1068 47 44.0008 47C41.8938 47 39.9818 46.177 38.5508 44.84Z" clip-rule="evenodd" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

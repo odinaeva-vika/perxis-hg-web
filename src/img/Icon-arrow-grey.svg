@@ -1,0 +1,15 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip8_813">
+			<rect id="Icon Name=forward" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Icon Name=forward" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip8_813)">
+		<path id="Fill 824" d="M16.2159 19.2614L22.3622 12.6827C22.7212 12.2983 22.7212 11.7017 22.3622 11.3173L16.2159 4.73865C15.8359 4.33203 15.1971 4.31372 14.7946 4.698L14.7058 4.78284C14.3133 5.15759 14.2913 5.7771 14.6564 6.17871L19.337 11.3273C19.6837 11.7087 19.6837 12.2913 19.337 12.6727L14.6564 17.8213C14.2913 18.2229 14.3133 18.8424 14.7058 19.2172L14.7946 19.302C15.1971 19.6863 15.8359 19.668 16.2159 19.2614Z" fill="#505050" fill-opacity="1.000000" fill-rule="evenodd"/>
+		<path id="Fill 792" d="M2 13.1111L20 13.1111C20.5523 13.1111 21 12.6633 21 12.1111L21 11.8888C21 11.3365 20.5523 10.8888 20 10.8888L2 10.8888C1.44772 10.8888 1 11.3365 1 11.8888L1 12.1111C1 12.6633 1.44772 13.1111 2 13.1111Z" fill="#505050" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

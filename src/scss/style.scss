@@ -1,0 +1,13 @@
+@use "sass:math";
+
+@import "./block/header";
+@import "./block/main";
+@import "fonts";
+@import "reset";
+@import "global";
+@import "burger";
+@import "banner";
+@import "stock";
+@import "map";
+@import "advantages";
+@import "./block/footer";

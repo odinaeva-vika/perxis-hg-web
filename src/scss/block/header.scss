@@ -1,0 +1,241 @@
+// header //
+.header {
+  padding: 10px 0;
+  width: 100%;
+  z-index: 20;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+  top: -100%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    @media (max-width: 520px) {
+      gap: 18px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  &__container-telephone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 805px) {
+      display: none;
+    }
+
+    & span {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+    }
+
+    & img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__logo {
+    width: 105px;
+    height: auto;
+
+    @media (max-width: 520px) {
+      width: 70px;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+
+    @media (max-width: 520px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.menu-box {
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+
+    &_margin {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__wrapper {
+    max-width: 552px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 36px;
+
+    @media (max-width: 520px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    max-width: 552px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 36px;
+
+    @media (max-width: 520px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__contacts {
+    margin-top: 54px;
+
+    @media (max-width: 520px) {
+      margin-top: 36px;
+    }
+  }
+
+  &__container {
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 58px;
+
+    @media (max-width: 520px) {
+      padding-top: 24px;
+      gap: 28px;
+    }
+  }
+}
+
+.menu__link {
+  font-size: 16px;
+  line-height: 150%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.menu__list-title {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.menu__container {
+  padding-bottom: 36px;
+  overflow-y: auto;
+  position: relative;
+  width: 52%;
+  height: 100%;
+  box-shadow: 17px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+
+  @media (max-width: 950px) {
+    width: 80%;
+    box-shadow: none;
+  }
+
+  @media (max-width: 650px) {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+.menu__sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  max-width: 720px;
+  height: 72px;
+  background-color: rgb(255, 255, 255);
+  z-index: 50;
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.menu__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.menu__container {
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu {
+  display: block;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  transform: translateX(-100%);
+  transition: all 0.6s ease-in-out;
+  visibility: hidden;
+  z-index: 10;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    @media (max-width: 520px) {
+      gap: 24px;
+    }
+  }
+}
+
+.burger_open {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.menu--visible {
+  transform: none;
+}
+
+.header--fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}

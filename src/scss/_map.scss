@@ -1,0 +1,125 @@
+.map {
+  &__box {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    @media (max-width: 865px) {
+      height: auto !important;
+    }
+  }
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+.ymaps-2-1-79-balloon__tail:after {
+  display: none;
+}
+
+[class*="ymaps-2-1-79-balloon"] {
+  top: 10px !important;
+  left: 10px !important;
+  box-shadow: none !important;
+}
+
+.ymaps-2-1-79-map {
+  height: 470px !important;
+
+  @media (max-width: 865px) {
+    height: 320px !important;
+  }
+}
+
+.balloon {
+  padding: 22px 24px 26px 24px;
+  position: absolute;
+  width: 400px;
+  min-height: 318px;
+  top: 74px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
+  gap: 24px;
+  z-index: 10;
+  border-radius: 18px;
+  box-shadow: 0px 0px 20px 0px rgba(22, 22, 22, 0.2);
+  background: rgb(255, 255, 255);
+
+  @media (max-width: 1000px) {
+    width: 357px;
+  }
+
+  @media (max-width: 865px) {
+    padding: 16px 18px 0px 18px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    min-height: auto;
+    top: -6px;
+    left: 0;
+    box-shadow: 0px -11px 11px -13px rgba(22, 22, 22, 0.2);
+  }
+
+  @media (max-width: 520px) {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 100%;
+
+    @media (max-width: 520px) {
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+  &__address {
+    color: #505050; //80 80 80
+    font-size: 16px;
+    line-height: 150%;
+
+    @media (max-width: 520px) {
+      font-size: 14px;
+    }
+  }
+  &__boxes {
+    display: flex;
+    gap: 36px;
+
+    @media (max-width: 520px) {
+      margin-bottom: 7px;
+    }
+  }
+  &__box {
+  }
+  &__box-title {
+    color: #7a7a7a; //122, 122, 122
+    font-size: 14px;
+    line-height: 100%;
+  }
+  &__box-tel {
+    padding: 8px 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+
+    @media (max-width: 520px) {
+      font-size: 14px;
+    }
+  }
+  &__box-time {
+    color: #505050; //80 80 80
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
