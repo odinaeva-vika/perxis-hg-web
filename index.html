@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link type="image/x-icon" href="../img/logo.svg" rel="shortcut icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240303032202"
+  />
+  <link rel="stylesheet" href="css/style.min.css?_v=20240303032202" />
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=0360b535-212c-4eff-83fc-0d82d81c2c77&_v=20240303032202"></script>
+  <title>perxis</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__box">
+        <button
+          class="burger js-burger-btn"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <span class="burger__line"></span>
+        </button>
+        <div class="menu js-burger">
+          <nav class="menu__container js-burger__content">
+            <div class="container-fluid">
+              <div class="menu__sticky"></div>
+              <div class="menu__inner">
+                <div class="menu-box">
+                  <h4 class="menu-box__title menu-box__title_margin">
+                    Модельный ряд
+                  </h4>
+                  <ul class="menu-box__wrapper">
+                    <li>
+                      <a class="menu__link" href="#!">Название модели</a>
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Название модели</a>
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Название модели</a>
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Название модели</a>
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Название модели</a>
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Название модели</a>
+                    </li>
+                    <li>
+                      <a class="menu__link" href="#!">Название модели</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu-box__content">
+                  <div>
+                    <h4 class="menu-box__title menu-box__title_margin">
+                      Покупателям
+                    </h4>
+                    <ul class="menu__list">
+                      <li>
+                        <a class="menu__link" href="#!">Автомобили в наличии</a>
+                      </li>
+                      <li>
+                        <a class="menu__link" href="#!">Акции и предложения</a>
+                      </li>
+                      <li>
+                        <a class="menu__link" href="#!">Кредит</a>
+                      </li>
+                      <li>
+                        <a class="menu__link" href="#!">Трейд-ин</a>
+                      </li>
+                      <li>
+                        <a class="menu__link" href="#!">Страхование</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="menu-box__title menu-box__title_margin">
+                      Владельцам
+                    </h4>
+                    <ul class="menu__list">
+                      <li>
+                        <a class="menu__link" href="#!"
+                          >Сервисное обслуживание</a
+                        >
+                      </li>
+                      <li>
+                        <a class="menu__link" href="#!">Запасные части</a>
+                      </li>
+                      <li>
+                        <a class="menu__link" href="#!">Гарантийный ремонт</a>
+                      </li>
+                      <li>
+                        <a class="menu__link" href="#!">Запись на сервис</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-box__wrapper menu-box__contacts">
+                <div class="menu__list">
+                  <p class="menu__list-title">Отдел продаж</p>
+                  <a class="contacts__tel" href="tel:+79876543210"
+                    >+7 (987) 654 32 10</a
+                  >
+                </div>
+                <div class="menu__list">
+                  <p class="menu__list-title">Отдел сервиса</p>
+                  <a class="contacts__tel" href="tel:+79876543211"
+                    >+7 (987) 654 32 11</a
+                  >
+                </div>
+              </div>
+              <div class="menu-box__container">
+                <button class="button">
+                  <span>задать вопрос</span
+                  ><img src="../img/Icon-chat.svg" alt="Иконка Задать вопрос" />
+                </button>
+                <ul class="footer-contacts__social">
+                  <li>
+                    <a href="#!">
+                      <img src="../img/icon-tg-black.svg" alt="Icon Telegram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <img
+                        src="../img/icon-vk-black.svg"
+                        alt="Icon ВКонтакте"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <img
+                        src="../img/icon-YouTube-black.svg"
+                        alt="Icon YouTube"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="header__logo">
+          <img src="../img/Logo.svg" alt="Логотип Dealer Company Name" />
+        </div>
+        <h1 class="header__title">Dealer Company Name</h1>
+      </div>
+      <div class="header__container">
+        <a class="header__container-telephone" href="tel:+79876543210"
+          ><span>+7 (987) 654 32 10</span
+          ><img src="../img/Icon-call.svg" alt="Иконка Телефона" />
+        </a>
+
+        <button class="button">
+          <span>задать вопрос</span
+          ><img src="../img/Icon-chat.svg" alt="Иконка Задать вопрос" />
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="banner">
+          <div class="swiper banner__swiper js-swiperBanner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="banner__img"
+                  src="../img/content/banner/banner.png"
+                  alt="Баннер"
+                />
+                <div class="banner-box">
+                  <div class="container">
+                    <div class="banner-box__inner">
+                      <h2 class="banner-box__title">Яркий заголовок</h2>
+                      <p class="banner-box__description">
+                        Слоган или предложение
+                      </p>
+                      <p class="banner-box__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                      <button class="button button_white">
+                        <span>подобрать</span>
+                        <img
+                          src="../img/Icon-arrow-btn.svg"
+                          alt="Стрелка подобрать"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="banner__img"
+                  src="../img/content/banner/banner.png"
+                  alt="Баннер"
+                />
+                <div class="banner-box">
+                  <div class="container">
+                    <div class="banner-box__inner">
+                      <h2 class="banner-box__title">Яркий заголовок</h2>
+                      <p class="banner-box__description">
+                        Слоган или предложение
+                      </p>
+                      <p class="banner-box__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                      <button class="button button_white">
+                        <span>подобрать</span>
+                        <img
+                          src="../img/Icon-arrow-btn.svg"
+                          alt="Стрелка подобрать"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="banner__img"
+                  src="../img/content/banner/banner.png"
+                  alt="Баннер"
+                />
+                <div class="banner-box">
+                  <div class="container">
+                    <div class="banner-box__inner">
+                      <h2 class="banner-box__title">Яркий заголовок</h2>
+                      <p class="banner-box__description">
+                        Слоган или предложение
+                      </p>
+                      <p class="banner-box__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                      <button class="button button_white">
+                        <span>подобрать</span>
+                        <img
+                          src="../img/Icon-arrow-btn.svg"
+                          alt="Стрелка подобрать"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner__container">
+              <div class="banner__button-prev">
+                <img src="../img/Arrow-banner.svg" alt="Стрелка налево" />
+              </div>
+              <div class="banner__button-next">
+                <img src="../img/Arrow-banner.svg" alt="Стрелка направо" />
+              </div>
+            </div>
+
+            <div class="banner__swiper-pagination swiper-pagination"></div>
+          </div>
+        </section>
+        <section class="stock">
+          <div class="container">
+            <h2 class="title">Акции и предложения</h2>
+          </div>
+          <div class="container__swiper">
+            <div class="swiper stock__swiper js-swiperStock">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide stock-card">
+                  <img
+                    class="stock-card__img"
+                    src="../img/content/stock/stock-3.png"
+                    alt="Баннер"
+                  />
+                  <div class="stock-card__box">
+                    <div class="stock-card__container">
+                      <h3 class="stock-card__title">
+                        Название акции или предложения
+                      </h3>
+                      <p class="stock-card__text">
+                        Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                    <a href="#!" class="stock-card__link">
+                      <span>Узнать больше</span>
+                      <img
+                        src="../img/Icon-arrow-grey.svg"
+                        alt="Стрелка Узнать больше"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide stock-card">
+                  <img
+                    class="stock-card__img"
+                    src="../img/content/stock/stock-2.png"
+                    alt="Баннер"
+                  />
+                  <div class="stock-card__box">
+                    <div class="stock-card__container">
+                      <h3 class="stock-card__title">Название предложения</h3>
+                      <p class="stock-card__text">
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                      </p>
+                    </div>
+                    <a href="#!" class="stock-card__link">
+                      <span>Узнать больше</span>
+                      <img
+                        src="../img/Icon-arrow-grey.svg"
+                        alt="Стрелка Узнать больше"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide stock-card">
+                  <img
+                    class="stock-card__img"
+                    src="../img/content/stock/stock-3.png"
+                    alt="Баннер"
+                  />
+                  <div class="stock-card__box">
+                    <div class="stock-card__container">
+                      <h3 class="stock-card__title">Название акции</h3>
+                      <p class="stock-card__text">
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                    <a href="#!" class="stock-card__link">
+                      <span>Узнать больше</span>
+                      <img
+                        src="../img/Icon-arrow-grey.svg"
+                        alt="Стрелка Узнать больше"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="stock__container">
+                <div class="stock__swiper-pagination swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container stock__box">
+            <a class="button" href="#!"
+              ><span>другие акции</span>
+              <img
+                src="../img/Icon-arrow-black.svg"
+                alt="Стрелка другие акции"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="map">
+          <div id="map" class="map__box">
+            <div id="balloon" class="balloon"></div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <h2 class="title">Наши преимущества</h2>
+          </div>
+          <div class="container__swiper">
+            <div class="swiper stock__swiper js-swiperStock">
+              <div class="swiper-wrapper advantages__swiper-wrapper">
+                <div class="swiper-slide advantages-card">
+                  <img
+                    class="advantages-card__img"
+                    src="../img/content/advantages/icon-wallet.svg"
+                    alt="Баннер"
+                  />
+                  <h3 class="advantages-card__title">Выгодно и удобно</h3>
+                  <p class="advantages-card__text">
+                    Лучшие предложения покупки с учетом trade-in и в кредит
+                  </p>
+                </div>
+                <div class="swiper-slide advantages-card">
+                  <img
+                    class="advantages-card__img"
+                    src="../img/content/advantages/icon-car.svg"
+                    alt="Баннер"
+                  />
+                  <h3 class="advantages-card__title">Автомобили в наличии</h3>
+                  <p class="advantages-card__text">
+                    Выбирайте онлайн, экономя время на визит в дилерский центр
+                  </p>
+                </div>
+                <div class="swiper-slide advantages-card">
+                  <img
+                    class="advantages-card__img"
+                    src="../img/content/advantages/icon-key.svg"
+                    alt="Баннер"
+                  />
+                  <h3 class="advantages-card__title">Надежный сервис</h3>
+                  <p class="advantages-card__text">
+                    Официальный сервис, оригинальные и проверенные запчасти
+                  </p>
+                </div>
+              </div>
+              <div class="stock__container">
+                <div class="stock__swiper-pagination swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <nav class="footer__boxes">
+        <h2 class="footer__title footer-grid__a">Dealer Company Name</h2>
+        <div class="footer__box footer-contacts footer-grid__b">
+          <div class="footer-contacts__box menu__list">
+            <p class="footer-contacts__title">Отдел продаж</p>
+            <a class="contacts__tel" href="tel:+79876543210"
+              >+7 (987) 654 32 10</a
+            >
+          </div>
+          <div class="footer-contacts__box menu__list">
+            <p class="footer-contacts__title">Отдел сервиса</p>
+            <a class="contacts__tel" href="tel:+79876543211"
+              >+7 (987) 654 32 11</a
+            >
+          </div>
+          <div class="menu__list">
+            <p class="footer-contacts__title">Мы в соцсетях</p>
+            <ul class="footer-contacts__social">
+              <li>
+                <a href="#!">
+                  <img src="../img/icon-tg-white.svg" alt="Icon Telegram" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="../img/icon-vk-white.svg" alt="Icon ВКонтакте" />
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <img src="../img/icon-YouTube-white.svg" alt="Icon YouTube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__wrapper footer-grid__c">
+          <div class="footer__box footer__title-click js-footerBox">
+            <h4 class="footer__title js-footerBtn">Модельный ряд</h4>
+            <ul class="menu__list js-footerList js-menu__list--close">
+              <li>
+                <a class="menu__link" href="#!">Название модели</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Название модели</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Название модели</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Название модели</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Название модели</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Название модели</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__box footer__title-click js-footerBox">
+            <h4 class="footer__title js-footerBtn">Покупателям</h4>
+            <ul class="menu__list js-footerList js-menu__list--close">
+              <li>
+                <a class="menu__link" href="#!">Автомобили в наличии</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Акции и предложения</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Кредит</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Трейд-ин</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Страхование</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__box footer__title-click js-footerBox">
+            <h4 class="footer__title js-footerBtn">Владельцам</h4>
+            <ul class="menu__list js-footerList js-menu__list--close">
+              <li>
+                <a class="menu__link" href="#!">Сервисное обслуживание</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Запасные части</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Гарантийный ремонт</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Запись на сервис</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__box footer__title-click js-footerBox">
+            <h4 class="footer__title js-footerBtn">Владельцам</h4>
+            <ul class="menu__list js-footerList js-menu__list--close">
+              <li>
+                <a class="menu__link" href="#!">Сервисное обслуживание</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Запасные части</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Гарантийный ремонт</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#!">Запись на сервис</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="footer-info">
+        <ul class="footer-info__box">
+          <li>
+            <p class="footer-info__text">© 2023 Dealer Company Name</p>
+          </li>
+          <li class="footer-info__link">
+            <a href="#!">Правовая информация</a>
+          </li>
+        </ul>
+        <p class="footer-info__production">Сделано в <span>Perx</span></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240303032202"></script>
+    <script src="js/app.min.js?_v=20240303032202"></script>
+  </body>
+</html>
